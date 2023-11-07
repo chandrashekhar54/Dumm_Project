@@ -8,22 +8,22 @@ namespace Calculator
 {
     class Calculator
     {
-        static void main()
+        static void MMain()
         { 
-            // Simple calculator
+
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
             Console.Write("Enter the first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine()   );
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter the operator: ");
+            char op = Convert.ToChar(Console.ReadLine(  ));
 
 
-            char op = Convert.ToChar(Console.ReadLine());
 
             Console.Write("Enter the second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine()   );
 
             double result = 0;
 
