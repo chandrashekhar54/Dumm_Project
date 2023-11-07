@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Calculator
+    class   Calculator
     {
-        static void MMain()
+        static void Main()
         { 
 
             Console.WriteLine("Simple Calculator");
@@ -23,11 +23,11 @@ namespace Calculator
 
 
             Console.Write("Enter the second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine()   );
+            double num2 =  Convert.ToDouble(Console.ReadLine()   );
 
             double result = 0;
 
-            switch (op)
+            switch    (op)
             {
                 case '+':
                     result = num1 + num2;
