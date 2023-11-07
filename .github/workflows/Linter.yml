@@ -17,8 +17,6 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: "false"
           
-      - name: Your Action
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}   
+     
 
           
