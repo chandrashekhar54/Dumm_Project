@@ -6,28 +6,27 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class   Calculator
+    class Calculator
     {
         static void Main()
-        { 
-
+        {
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
             Console.Write("Enter the first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine()      );
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter the operator: ");
-            char op = Convert.ToChar(Console.ReadLine(  ));
+            char op = Convert.ToChar(Console.ReadLine());
 
 
 
             Console.Write("Enter the second number: ");
-            double num2 =  Convert.ToDouble(Console.ReadLine()   );
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             double result = 0;
 
-            switch    (op)
+            switch (op)
             {
                 case '+':
                     result = num1 + num2;
@@ -53,7 +52,6 @@ namespace Calculator
                     Console.WriteLine("Invalid operator.");
                     return;
             }
-
             Console.WriteLine("Result: " + result);
             Console.ReadLine();
         }
