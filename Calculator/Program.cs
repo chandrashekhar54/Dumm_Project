@@ -10,12 +10,10 @@ namespace Calculator
             Console.WriteLine("Available operations: +, -, *, /");
 
             Console.Write("Enter the first number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine()  );
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
-
-
 
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
@@ -43,11 +41,13 @@ namespace Calculator
                         Console.WriteLine("Division by zero is not allowed.");
                         return;
                     }
+
                     break;
                 default:
                     Console.WriteLine("Invalid operator.");
                     return;
             }
+
             Console.WriteLine("Result: " + result);
             Console.ReadLine();
         }
