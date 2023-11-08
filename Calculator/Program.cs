@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
@@ -10,7 +6,6 @@ namespace Calculator
     {
         static void Main()
         {
-            int number = 0;
 
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
