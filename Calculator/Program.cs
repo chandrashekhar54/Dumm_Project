@@ -10,6 +10,8 @@ namespace Calculator
     {
         static void Main()
         {
+            int number = 0;
+
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
