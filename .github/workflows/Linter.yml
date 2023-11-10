@@ -6,7 +6,7 @@ on:
       - master # Change this to the branch you want to run Super Linter on
   pull_request:
     branches:
-      - main    
+      - master    
 
 jobs:
   super-linter:
