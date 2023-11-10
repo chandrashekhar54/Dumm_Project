@@ -39,9 +39,9 @@ jobs:
 
       - name: Check linting results
         run: |
-          if ! actionlint; then
-          echo "Linting failed. Exiting..."
-          exit 1
+          if [ $? -ne 0 ]; then
+            echo "Linting failed. Exiting..."
+            exit 1
           fi
    
 
