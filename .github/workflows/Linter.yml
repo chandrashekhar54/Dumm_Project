@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master # Change this to the branch you want to run Super Linter on
+  pull_request:
+    branches:
+      - main    
 
 jobs:
   super-linter:
