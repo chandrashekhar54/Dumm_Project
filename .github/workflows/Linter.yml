@@ -6,7 +6,7 @@ on:
       - master # Change this to the branch you want to run Super Linter on
   pull_request:
     branches:
-      - main    
+      - master    
 
 jobs:
   super-linter:
@@ -31,10 +31,11 @@ jobs:
 
       - name: Check linting results
         run: |
-         if [ $? -ne 0 ]; then
+          if ! actionlint; then
           echo "Linting failed. Exiting..."
           exit 1
-         fi   
+          fi
+   
 
           
           
