@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    class Calculator
+    class   Calculator
     {
         static void Main()
         {
