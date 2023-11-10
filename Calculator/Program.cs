@@ -10,6 +10,7 @@ namespace Calculator
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
+            // Updated
             Console.Write("Enter the first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
