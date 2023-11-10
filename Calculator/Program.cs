@@ -23,6 +23,7 @@ namespace Calculator
 
             double result = 0;
 
+            // Updated
             switch (op)
             {
                 case '+':
