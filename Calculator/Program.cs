@@ -17,6 +17,7 @@ namespace Calculator
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
 
+            // Updated code
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
