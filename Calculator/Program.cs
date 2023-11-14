@@ -19,11 +19,11 @@ namespace Calculator
 
             // Updated code
             Console.Write("Enter the second number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            double num2 = Convert.   ToDouble(Console.ReadLine());
 
             double result = 0;
 
-            //updated
+            // updated
             switch (op)
             {
                 case '+':
@@ -52,7 +52,7 @@ namespace Calculator
                     return;
             }
 
-            // updated
+            // updated code
             Console.WriteLine("Result: " + result);
             Console.ReadLine();
         }
