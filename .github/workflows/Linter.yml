@@ -39,7 +39,7 @@ jobs:
 
       - name: Check linting results
         run: |
-         if ! C:\ProgramData\chocolatey\bin\actionlint.exe; then
+         if ! cmd /C "C:\\ProgramData\\chocolatey\\bin\\actionlint.exe"; then
             echo "Linting failed. Exiting..."
             exit 1
          fi
