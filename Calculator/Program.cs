@@ -52,7 +52,7 @@ namespace Calculator
                     return;
             }
 
-            // updated
+            // updated code
             Console.WriteLine("Result: " + result);
             Console.ReadLine();
         }
