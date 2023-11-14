@@ -39,10 +39,10 @@ jobs:
 
       - name: Check linting results
         run: |
-          if ! actionlint; then
-          echo "Linting failed. Exiting..."
-          exit 1
-          fi
+         if ! C:\ProgramData\chocolatey\bin\actionlint.exe; then
+            echo "Linting failed. Exiting..."
+            exit 1
+         fi
    
 
           
