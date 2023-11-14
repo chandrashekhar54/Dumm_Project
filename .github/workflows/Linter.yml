@@ -30,6 +30,7 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUTPUT_DETAILS: detailed
+
       - name: Run tests and lint
         run: |
           npm run lint
@@ -37,16 +38,9 @@ jobs:
         # Add more checks as needed
         continue-on-error: true # Continue to the next steps even if linting fails
 
-      - name: Check linting results
+      - name: Check if actionlint is installed
         run: |
-         if ! C:\ProgramData\chocolatey\bin\actionlint.exe; then
-            echo "Linting failed. Exiting..."
-            exit 1
+         if ! command -v actionlint &> /dev/null; then
+           echo "Actionlint is not installed. Exiting..."
+           exit 1
          fi
-   
-
-          
-          
-     
-
-          
