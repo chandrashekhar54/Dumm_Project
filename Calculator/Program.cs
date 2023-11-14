@@ -6,15 +6,18 @@ namespace Calculator
     {
         static void Main()
         {
+            // Updated
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
+            // Updated
             Console.Write("Enter the first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
 
+            // Updated code
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
