@@ -1,8 +1,9 @@
 name: Super Linter
+
 on:
   push:
     branches:
-      - master # Change this to the branch you want to run Super Linter on
+      - master
   pull_request:
     branches:
       - master    
@@ -21,11 +22,13 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUTPUT_DETAILS: detailed
-      
-   
 
-          
-          
-     
-
-          
+      - name: Set Super Linter Status Check
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: 'linter-report.html'  # Adjust this based on the output of Super Linter
+          name: Super Linter Report
+          tag: ${{ github.sha }}
+          body: 'Super Linter has completed successfully.'
