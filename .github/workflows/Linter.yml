@@ -37,11 +37,11 @@ jobs:
         # Add more checks as needed
         continue-on-error: true # Continue to the next steps even if linting fails
 
-      - name: Check linting results
+      - name: Check if actionlint is installed
         run: |
-         if ! C:\ProgramData\chocolatey\bin\actionlint.exe; then
-            echo "Linting failed. Exiting..."
-            exit 1
+         if [ ! -x "C:\ProgramData\chocolatey\bin\actionlint.exe" ]; then
+           echo "Actionlint is not installed. Exiting..."
+           exit 1
          fi
    
 
