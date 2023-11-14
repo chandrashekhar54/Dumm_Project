@@ -19,7 +19,7 @@ namespace Calculator
 
             // Updated code
             Console.Write("Enter the second number: ");
-            double num2 = Convert.   ToDouble(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             double result = 0;
 
