@@ -35,7 +35,7 @@ jobs:
           npm run lint
           npm test
         # Add more checks as needed
-        continue-on-error: true # Continue to the next steps even if linting fails
+        continue-on-error: false # Continue to the next steps even if linting fails
 
       - name: Check linting results
         run: |
