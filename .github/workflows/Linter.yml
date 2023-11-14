@@ -3,7 +3,7 @@ name: Super Linter
 on:
   push:
     branches:
-      - master # Change this to the branch you want to run Super Linter on
+      - master
   pull_request:
     branches:
       - master    
@@ -21,7 +21,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install -g actionlint  
+        run: npm install -g actionlint   
 
       - name: Run Super Linter
         uses: github/super-linter@v4
@@ -30,23 +30,26 @@ jobs:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUTPUT_DETAILS: detailed
+
       - name: Run tests and lint
         run: |
           npm run lint
           npm test
-        # Add more checks as needed
         continue-on-error: true # Continue to the next steps even if linting fails
 
-      - name: Check linting results
+      - name: Debugging - Print PATH
         run: |
-         if ! C:\ProgramData\chocolatey\bin\actionlint.exe; then
-            echo "Linting failed. Exiting..."
+          echo "PATH: $PATH"
+          echo "Checking if actionlint is installed: $(command -v actionlint)"
+
+      - name: Debugging - Print actionlint installation directory
+        run: |
+          echo "actionlint installation directory: $(npm root -g)/actionlint"
+          ls -l $(npm root -g)/actionlint
+
+      - name: Check if actionlint is installed
+        run: |
+          if ! command -v actionlint > /dev/null 2>&1; then
+            echo "Actionlint is not installed. Exiting..."
             exit 1
-         fi
-   
-
-          
-          
-     
-
-          
+          fi
