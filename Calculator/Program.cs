@@ -5,7 +5,7 @@ namespace Calculator
     class Calculator
     {
         static void Main()
-        { 
+        {
             // Updated code
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
