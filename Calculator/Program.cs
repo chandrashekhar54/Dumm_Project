@@ -21,6 +21,7 @@ namespace Calculator
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
+            // code
             double result = 0;
 
             // updated codeeee
