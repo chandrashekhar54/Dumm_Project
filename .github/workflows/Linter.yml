@@ -1,3 +1,4 @@
+
 #################################
 #################################
 ## Super Linter GitHub Actions ##
@@ -60,4 +61,40 @@ jobs:
           OUTPUT_DETAILS: detailed
           CREATE_LOG_FILE: true
           LOG_FILE: super-linter.log
+
+      - name: Install actionlint
+        run: npm install -g actionlint 
+
+      - name: Check npm global package locations
+        run: |
+         npm list -g
+
+      - name: Check linting results
+        run: |
+          actionlint_path=$(npm bin -g)/actionlint
+          if $actionlint_path --version; then
+            echo "actionlint is installed and executable."
+          else
+            echo "actionlint not found or not executable."
+            exit 1
+          fi
+
+ 
+
+    
+        
+
+        
+          
+
+           
+
+          
+
+          
+
+          
+
+     
+  
           
