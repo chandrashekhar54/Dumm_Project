@@ -6,7 +6,7 @@ namespace Calculator
     {
         static void Main()
         {
-            // Updated code
+            // Finally updated
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
