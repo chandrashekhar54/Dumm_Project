@@ -60,4 +60,20 @@ jobs:
           OUTPUT_DETAILS: detailed
           CREATE_LOG_FILE: true
           LOG_FILE: super-linter.log
+
+      - name: Install actionlint
+        run: npm install -g actionlint
+
+      - name: Check linting results
+        run: |
+          actionlint_path=$(command -v actionlint)
+          echo "actionlint_path: $actionlint_path"
+          ls -l "$(dirname "$actionlint_path")"
+          if [ -n "$actionlint_path" ]; then
+            echo "actionlint is installed at: $actionlint_path"
+          else
+            echo "actionlint not found in PATH"
+            exit 1
+          fi
+  
           
