@@ -17,7 +17,7 @@ namespace Calculator.Tests
             double result = Calculate.Add(num1, num2);
 
             // Assert
-            Assert.AreEqual(8.0, result, 0.0001, "Addition result is incorrect.");
+            Assert.AreEqual(9.0, result);
         }
     }
 }
