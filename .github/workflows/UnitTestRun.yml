@@ -1,0 +1,29 @@
+name: MSTest Unit Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Framework
+      uses: actions/setup-dotnet@v3
+    
+    - name: Restore Dependencies
+      run: nuget restore
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Run MSTest
+      run: dotnet test Calculator --filter FullyQualifiedName~CalculateAddTest
