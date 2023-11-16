@@ -4,9 +4,8 @@ namespace Calculator
 {
     class Calculator
     {
-        static void main()
+        static void Main()
         {
-            // Finally updated code
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
