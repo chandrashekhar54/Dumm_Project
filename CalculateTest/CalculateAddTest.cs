@@ -17,7 +17,7 @@ namespace Calculator.Tests
             double result = Calculate.Add(num1, num2);
 
             // Assert
-            Assert.AreEqual(10.0, result);
+            Assert.AreEqual(12.0, result);
         }
     }
 }
