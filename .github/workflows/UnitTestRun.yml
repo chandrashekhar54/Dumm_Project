@@ -26,7 +26,4 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Run MSTest
-      run: |
-        nuget install MSTest.TestAdapter -Version 2.2.6 -OutputDirectory testrunner
-        nuget install MSTest.TestFramework -Version 2.2.6 -OutputDirectory testrunner
-        testrunner/MSTest.TestAdapter.2.2.6/build/net45/MSTest.exe /testcontainer:Your.Tests.dll
+      run: dotnet test --filter FullyQualifiedName~CalculateAddTest
