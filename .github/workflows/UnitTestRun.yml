@@ -23,7 +23,7 @@ jobs:
       run: nuget restore
 
     - name: Build
-      run: msbuild /p:Configuration=Release
+      run: dotnet build --configuration Release
 
     - name: Run MSTest
       run: |
