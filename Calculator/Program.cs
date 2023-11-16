@@ -4,11 +4,11 @@ namespace Calculator
 {
     class Calculator
     {
-        static void Main()
+        static void main()
         {
             // Finally updated code
             Console.WriteLine("Simple Calculator");
-            Console.   WriteLine("Available operations: +, -, *, /");
+            Console.WriteLine("Available operations: +, -, *, /");
 
             // Updated
             Console.Write("Enter the first number: ");
