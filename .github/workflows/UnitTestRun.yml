@@ -26,4 +26,4 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Run MSTest
-      run: dotnet test --filter FullyQualifiedName~CalculateAddTest
+      run: dotnet test Calculator --filter FullyQualifiedName~CalculateAddTest
