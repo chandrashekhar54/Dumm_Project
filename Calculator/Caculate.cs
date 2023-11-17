@@ -13,7 +13,7 @@ namespace Calculator
             Console.Write("Enter the first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
-            // updated
+            // updated code
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
 
@@ -60,7 +60,6 @@ namespace Calculator
             return a * b;
         }
 
-        // updated code
         public static double Divide(double a, double b)
         {
             if (b != 0)
