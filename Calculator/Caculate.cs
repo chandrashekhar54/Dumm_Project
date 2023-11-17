@@ -7,12 +7,13 @@ namespace Calculator
         public static void Main()
         {
             // updated
-            Console. WriteLine("Simple Calculator");
+            Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
             Console.Write("Enter the first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
+            // updated
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
 
