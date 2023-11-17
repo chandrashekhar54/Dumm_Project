@@ -6,7 +6,7 @@ namespace Calculator
     {
         public static void Main()
         {
-            // updated
+            // updated code
             Console.WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
@@ -20,7 +20,7 @@ namespace Calculator
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
-            // Variable updated
+            // Variable updated 
             double result = 0;
 
             switch (op)
