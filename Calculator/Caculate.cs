@@ -13,7 +13,7 @@ namespace Calculator
             Console.Write("Enter the first number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
 
-            // updated code
+            // updated codee
             Console.Write("Enter the operator: ");
             char op = Convert.ToChar(Console.ReadLine());
 
