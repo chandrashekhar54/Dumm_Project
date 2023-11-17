@@ -7,7 +7,7 @@ namespace Calculator
         public static void Main()
         {
             // updated
-            Console.WriteLine("Simple Calculator");
+            Console. WriteLine("Simple Calculator");
             Console.WriteLine("Available operations: +, -, *, /");
 
             Console.Write("Enter the first number: ");
