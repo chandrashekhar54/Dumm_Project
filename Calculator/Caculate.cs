@@ -60,6 +60,7 @@ namespace Calculator
             return a * b;
         }
 
+        // updated
         public static double Divide(double a, double b)
         {
             if (b != 0)
