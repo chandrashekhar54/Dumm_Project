@@ -20,7 +20,7 @@ namespace Calculator
             Console.Write("Enter the second number: ");
             double num2 = Convert.ToDouble(Console.ReadLine());
 
-            // Variable 
+            // Variable updated
             double result = 0;
 
             switch (op)
